@@ -20,7 +20,7 @@
         <Button x:Name="btnPausa" Content="Pausar" HorizontalAlignment="Left" Margin="108,281,0,0" VerticalAlignment="Top" Width="93" Style="{StaticResource AccentedSquareButtonStyle}" Click="btnPausa_Click"/>
         <Button x:Name="btnTerminar" Content="Terminar" HorizontalAlignment="Left" Margin="304,281,-26,0" VerticalAlignment="Top" Width="93" Style="{StaticResource AccentedSquareButtonStyle}" Click="btnTerminar_Click"/>
         <ScrollViewer HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-        <DataGrid x:Name="procesView" HorizontalAlignment="Left" Margin="10,10,-26,0" VerticalAlignment="Top" Width="387" Height="266" Grid.Row="0" AutoGenerateColumns="False" ItemsSource="{Binding}" MouseDown="procesView_MouseDown" SelectionChanged="procesView_SelectionChanged">
+        <DataGrid x:Name="procesView" HorizontalAlignment="Left" Margin="10,10,-26,0" VerticalAlignment="Top" Width="387" Height="266" Grid.Row="0" AutoGenerateColumns="False" ItemsSource="{Binding}"  SelectionChanged="procesView_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Width="50" Header="ID" Binding="{Binding ID}"/>
                 <DataGridTextColumn Width="100" Header="Proceso" Binding="{Binding nombre}"/>
